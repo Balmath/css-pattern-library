@@ -1,2 +1,2 @@
-# css-template-library
-A CSS template library for the websites I develop
+# css-pattern-library
+A CSS pattern library for the websites I develop

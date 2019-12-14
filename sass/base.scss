@@ -1,0 +1,28 @@
+// You can add normalize.css before this stylesheet. 
+// It will removes any discrepancies among the browsers.
+// http://necolas.github.io/normalize.css/
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+// Add any style that you to apply globally to elements.
+// Don't add any selector with IDs or class here.

@@ -1,0 +1,68 @@
+// Text center
+//
+// Center text within a block.
+//
+// Markup:
+// <p class="text-center">Centered text</p>
+//
+// Styleguide Utilities.text-center
+
+.text-center {
+    text-align: center !important;
+}
+
+// Float left
+//
+// Float an element to the left.
+// 
+// Styleguide Utilities.float-left
+
+.float-left {
+    float: left;
+}
+
+// Float right
+//
+// Float an element to the left.
+// 
+// Styleguide Utilities.float-left
+
+.float-right {
+    float: left;
+}
+
+// Clearfix
+// 
+// Force an element to contain its floated contents
+//
+// Markup:
+// <div class="clearfix">
+//   <span class="float-left">floated left</span>
+//   <span>normal flow</span>
+//   <span class="floated-right">floated right</span>
+// </div>
+// 
+// Styleguide Utilities.clearfix
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+// Hidden
+//
+// Hide an element.
+// 
+// Markup:
+// <p class="hidden">Text</p>
+// <button class="hidden__button">Show</button>
+// 
+// Styleguide Utilities.hidden
+
+.hidden {
+    display: none !important;
+}

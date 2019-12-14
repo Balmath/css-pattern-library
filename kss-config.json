@@ -1,0 +1,13 @@
+{
+    "title": "Balmath's pattern libray",
+    "source": [
+        "./sass"
+    ],
+    "destination": "docs/",
+    "css": [
+        "../css/main.css"
+    ],
+    "js": [
+        "../js/docs.js"
+    ]
+}
