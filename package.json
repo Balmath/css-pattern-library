@@ -4,9 +4,10 @@
   "description": "A CSS pattern library for the websites I develop",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass sass/ -o css/",
+    "sass": "node-sass sass/main.scss -o css",
     "kss": "kss --config kss-config.json",
-    "build": "npm run sass && npm run kss",
+    "postcss": "postcss -o build/main.css css/main.css",
+    "build": "npm run sass && npm run kss && npm run postcss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +22,10 @@
   },
   "homepage": "https://github.com/Balmath/css-pattern-library#readme",
   "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "cssnano": "^4.1.10",
     "kss": "^3.0.0-beta.25",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^6.1.3"
   }
 }
