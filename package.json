@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass sass/main.scss -o css",
-    "kss": "copyfiles css/main.css docs && copyfiles js/docs.js docs && kss --config kss-config.json",
+    "kss": "copyfiles css/*.css docs && copyfiles js/docs.js docs && kss --config kss-config.json",
     "postcss": "postcss -o build/main.css css/main.css",
     "build": "npm run sass && npm run kss && npm run postcss",
     "test": "echo \"Error: no test specified\" && exit 1"
