@@ -1,0 +1,80 @@
+$large-screen-width: 37em;
+
+// Banner
+//
+// The banner module is usually used to display the title of the website.
+//
+// Markup:
+// <div class="banner">
+//     <h1>My Website</h1>
+//     <h2>My sub title</h2>
+// </div>
+//
+// Styleguide Banner
+
+.banner {
+    background-color: $main-color;
+    padding: 1rem 0;
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: -0.2em;
+        font-size: 3em;
+        color: $light-text-color;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.5em;
+        letter-spacing: -0.05em;
+        color: $light-text-color;
+    }
+}
+
+// Banner inner
+//
+// The banner inner element helps to center and limit the width of the banner content.
+//
+// Markup:
+// <div class="banner">
+//     <div class="banner__inner">
+//         <h1>My Website</h1>
+//         <h2>My sub title</h2>
+//     </div>
+// </div>
+//
+// Styleguide Banner.Inner
+
+.banner__inner
+{
+    max-width: $max-content-width;
+    margin: 0 auto;
+}
+
+// Banner short title
+//
+// The banner short title element helps to display an alternative title on small screen.
+//
+// Markup:
+// <div class="banner">
+//     <h1 class="banner__short-title">Short title</h1>
+//     <h1>If you see this title, it's because the width of the screen is large enough. Try to reduce the width to see the short title.</h1>
+//     <h2>My sub title</h2>
+// </div>
+//
+// Styleguide Banner.ShortTitle
+
+.banner__short-title {
+    @media (min-width: $large-screen-width) {
+        display: none;
+    }
+}
+
+.banner__short-title + h1 {
+    display: none;
+
+    @media (min-width: $large-screen-width) {
+        display: block;
+    }
+}

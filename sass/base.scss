@@ -5,7 +5,10 @@
 // To embed the selected fonts into a webpage, copy this code into the <head> of your HTML document.
 // <link href="https://fonts.googleapis.com/css?family=Sahitya|Source+Sans+Pro&display=swap" rel="stylesheet">
 
-$text-color: hsl(120, 10%, 10%);
+$main-color: hsl(90, 70%, 50%);
+$text-color: hsl(90, 5%, 15%);
+$light-text-color:hsl(270, 5%, 95%);
+$max-content-width: 80rem;
 
 :root {
     box-sizing: border-box;
@@ -20,6 +23,7 @@ $text-color: hsl(120, 10%, 10%);
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: calc(1em + 0.5vw);
 
     * + * {
         margin-top: 1.5em;
@@ -28,10 +32,20 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sahitya', serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: $main-color;
 }
 
 img {
     max-width: 100%;
+}
+
+p {
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1.3em;
+    letter-spacing: 0.05em;
 }
 
 // Add any style that you to apply globally to elements.
