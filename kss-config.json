@@ -5,9 +5,9 @@
     ],
     "destination": "docs/",
     "css": [
-        "../css/main.css"
+        "css/main.css"
     ],
     "js": [
-        "../js/docs.js"
+        "js/docs.js"
     ]
 }
